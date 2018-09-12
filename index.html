@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<ul>
+		<li class="activar"><a href="#">Home</a></li>
+		<li class=""><a href="#">Abaout</a></li>
+		<li class=""><a href="#">Portafolio</a></li>
+		<li class=""><a href="#">Contact</a></li>
+	</ul>
+
+<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+  <script type="text/javascript">
+
+  	$(document).on('click','ul li', function(){
+  		$(this).addClass('activar').siblings().removeClass('activar');
+  	});
+  </script>
+
+</body>
+</html>
